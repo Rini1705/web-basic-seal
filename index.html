@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>PORTFOLIO</title>
+    <link rel="stylsheet" type="text/css" href="css/style.css">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="https://fonts.googleapis.com/css2?family=josefin:ital,wght@0, 100;0,
+200;0,300;0,400;0,500;0,600;0,700;1;200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            font-family: 'Josefin Sans', sans-serif;
+            box-sizing: border-box;
+        }
+
+        .hero {
+            height: 100vh;
+            width: 100%;
+            background-image: url(img/black1.jpg);
+        }
+
+        nav {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding-top: 45px;
+            padding-left: 8%;
+            padding-right: 8%;
+        }
+
+        .logo {
+            color: white;
+            font-size: 35px;
+            letter-spacing: 1px;
+            cursor: pointer;
+        }
+
+        span {
+            color: #f9004d;
+        }
+
+        nav ul li {
+            list-style-type: none;
+            display: inline-block;
+            padding: 10px 25px;
+        }
+
+        nav ul li {
+            color: #f9004d;
+            text-decoration: none;
+            font-weight: bold;
+            text-transform: capitalize;
+        }
+
+        nav ul li:hover {
+            color: aliceblue;
+            transition: .4s;
+            cursor: pointer;
+        }
+
+        .btn {
+            background-color: #f9004d;
+            color: white;
+            text-decoration: none;
+            border: 2px solid transparent;
+            font-weight: bold;
+            padding: 10px 25px;
+            border-radius: 30px;
+            transition: transform .4s;
+        }
+
+        .btn:hover {
+            transform: scale(1.2);
+        }
+
+        .content {
+            position: absolute;
+            top: 50%;
+            left: 8%;
+            transform: translateY(-50%);
+        }
+
+        h1 {
+            color: #f9004d;
+            margin: 20px 0px 20px;
+            font-size: 75px;
+        }
+
+        h3 {
+            color: white;
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
+
+        h4 {
+            color: white;
+            letter-spacing: 2px;
+            font-size: 20px;
+        }
+
+        .newslatter form {
+            width: 380px;
+            max-width: 100%;
+            position: relative;
+        }
+
+        .newslatter form input:first-child {
+            display: inline-block;
+            width: 100%;
+            padding: 14px 130px 14px 15px;
+            border: 2px solid #f9004d;
+            outline: none;
+            border-radius: 30px;
+        }
+
+        .newslatter form input:last-child {
+            position: absolute;
+            display: inline-block;
+            outline: none;
+            border: none;
+            padding: 10px 30px;
+            border-radius: 30px;
+            background-color: #f9004d;
+            color: white;
+            top: 6px;
+            right: 6px;
+        }
+
+        .about {
+            width: 100%;
+            padding: 100px 0px;
+            background-color: #191919;
+        }
+
+        .about img {
+            height: auto;
+            width: 430px;
+        }
+
+        .about-text {
+            width: 550px;
+        }
+
+        .main {
+            width: 1130px;
+            max-width: 95%;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+        }
+
+        .about-text h2 {
+            color: white;
+            font-size: 75px;
+            text-transform: capitalize;
+            margin-bottom: 20px;
+        }
+
+        .about-text h5 {
+            color: white;
+            letter-spacing: 2px;
+            font-size: 22px;
+            margin-bottom: 25px;
+            text-transform: capitalize;
+        }
+
+        .about-text p {
+            color: white;
+            letter-spacing: 1px;
+            line-height: 28px;
+            font-size: 18px;
+            margin-bottom: 45px;
+        }
+    </style>
+</head>
+
+<body>
+    <!---hero-->
+
+    <div class="hero">
+        <nav>
+            <h2 class="logo">Portfo<span>lio</span></h2>
+            <ul>
+                <li>
+                    <a href="#"></a>Home</li>
+                <li>
+                    <a href="#about">About</a></li>
+                <li>
+                    <a href="#"></a>Education</li>
+                <li>
+                    <a href="#"></a>Contact</li>
+            </ul>
+            <a href="#" class="btn">Instagram</a>
+        </nav>
+
+        <div class="content">
+            <h4>Hello, Nama saya</h4>
+            <h1>Rini Maulida</h1>
+            <h3>Saya seorang Freelance Design Grafis</h3>
+
+            <div class="newslatter">
+                <form>
+                    <input type="email" name="email" id="mail" placeholder="Enter Your Email">
+                    <input type="submit" name="submit" placeholder="Lets Start">
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!----About-->
+    <section id="about" class="about">
+        <div class="main">
+            <img src="img/riniiii.jpeg">
+            <div href="about.html" class="about-text">
+
+                <h2>About Me</h2>
+                <h5>Design Grafis <span>& Designer Product Startup</span></h5>
+                <p>
+                    Saya merupakan salah satu mahasiswi di Politeknik Negeri Banyuwangi, saya sangat menyukai bidang Design dan saat ini saya belajar di program kampus merdeka SIB ( Studi Independent Bersertifikat ) SEAL.
+
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!----section----->
+    <div class="service">
+        <div>
+
+        </div>
+    </div>
+</body>
+
+</html>
